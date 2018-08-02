@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>PlayGrounds! Boxes!</title>
+<meta name='description' content=''>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+<style>
+    h2{
+        text-align:center
+    }
+    div.container{
+        min-height:100px;
+        width:700px;
+
+        margin:auto;
+    }
+    div.box{
+        width:100px;
+        height:100px;
+        display:inline-block;
+        margin:20px;
+        background-color:rgb(89, 125, 247);
+        background-color: {{color}};
+        border: 2px solid black;
+    }
+</style>
+
+</head>
+<body>
+    <h2>Welcome!</h2>
+    <div class ='container'>
+    {% for i in range(boxCount): %}
+    <div class = 'box'></div>
+    {% endfor %}
+    </div>
+</body>
+</html>
